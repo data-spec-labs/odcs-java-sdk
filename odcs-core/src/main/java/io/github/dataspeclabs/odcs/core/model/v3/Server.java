@@ -44,6 +44,24 @@ public final class Server {
         this.roles = roles == null ? null : List.copyOf(roles);
     }
 
+    /**
+     * Creates a server including type-specific additional properties (host, port, database, …).
+     */
+    public static Server create(
+            String server,
+            ServerType type,
+            String environment,
+            String description,
+            List<String> roles,
+            Map<String, Object> additionalProperties
+    ) {
+        Server result = new Server(server, type, environment, description, roles);
+        if (additionalProperties != null) {
+            result.additionalProperties.putAll(additionalProperties);
+        }
+        return result;
+    }
+
     @JsonProperty("server")
     public String server() {
         return server;
