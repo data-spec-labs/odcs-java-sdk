@@ -1,4 +1,3 @@
-# ODCS Java SDK
 # Open Data Contract Standard (ODCS) Java SDK
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.data-spec-labs/odcs-java-sdk.svg?label=Maven%20Central&color=brightgreen)](https://central.sonatype.com/artifact/io.github.data-spec-labs/odcs-java-sdk)
