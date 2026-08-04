@@ -1,0 +1,9 @@
+apiVersion: v2.2.2
+kind: DataContract
+uuid: 11111111-2222-3333-4444-555555555555
+type: tables
+status: active
+version: 1.0.0
+datasetName: seller_payments
+quantumName: seller_payments_v1
+dataset: []
