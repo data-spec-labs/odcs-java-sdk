@@ -5,7 +5,7 @@
 
     <groupId>io.github.data-spec-labs</groupId>
     <artifactId>odcs-java-sdk</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>odcs-java-sdk</name>
     <description>Enterprise-grade Java SDK for the Open Data Contract Standard (ODCS)</description>
@@ -18,6 +18,30 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <developers>
+        <developer>
+            <id>rajatgl17</id>
+            <name>Rajat Goel</name>
+            <url>https://github.com/rajatgl17</url>
+        </developer>
+
+        <developer>
+            <id>datapseclabs</id>
+            <name>DataSpec Labs</name>
+            <organization>DataSpec Labs</organization>
+            <organizationUrl>https://github.com/data-spec-labs</organizationUrl>
+            <roles>
+                <role>Organization</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/data-spec-labs/odcs-java-sdk.git</connection>
+        <developerConnection>scm:git:ssh://github.com/data-spec-labs/odcs-java-sdk.git</developerConnection>
+        <url>https://github.com/data-spec-labs/odcs-java-sdk</url>
+    </scm>
 
     <modules>
         <module>odcs-core</module>
@@ -87,4 +111,62 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.7.0</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>central</publishingServerId>
+                            <autoPublish>true</autoPublish>
+                        </configuration>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>3.3.0</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals><goal>jar-no-fork</goal></goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>3.6.3</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals><goal>jar</goal></goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>3.1.0</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals><goal>sign</goal></goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
 </project>
