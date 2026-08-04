@@ -1,0 +1,21 @@
+apiVersion: v3.0.2
+kind: DataContract
+id: 11111111-2222-3333-4444-555555555555
+version: 1.0.0
+status: draft
+name: deprecated-team-array-example
+# Deprecated flat team array (v2/v3.0 style) — must deserialize into Team.members
+team:
+  - username: alice
+    role: Owner
+    dateIn: "2023-01-01"
+  - username: bob
+    role: Data Engineer
+    dateIn: "2023-02-15"
+schema:
+  - name: events
+    physicalType: table
+    properties:
+      - name: event_id
+        logicalType: string
+        primaryKey: true
