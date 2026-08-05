@@ -1,11 +1,15 @@
 # Open Data Contract Standard (ODCS) Java SDK
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.data-spec-labs/odcs-java-sdk.svg?label=Maven%20Central&color=brightgreen)](https://central.sonatype.com/artifact/io.github.data-spec-labs/odcs-java-sdk)
-[![Continuous Integration](https://github.com/data-spec-labs/odcs-java-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/data-spec-labs/odcs-java-sdk/actions)
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Java Version](https://img.shields.io/badge/Java-17%2B-brightgreen.svg?logo=openjdk&logoColor=white)](https://jdk.java.net/)
 [![Publisher](https://img.shields.io/badge/Publisher-DataSpec--Labs-0052CC?logo=github)](https://github.com/data-spec-labs)
 
+[![Continuous Integration](https://github.com/data-spec-labs/odcs-java-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/data-spec-labs/odcs-java-sdk/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=data-spec-labs_odcs-java-sdk&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=data-spec-labs_odcs-java-sdk)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=data-spec-labs_odcs-java-sdk&metric=coverage)](https://sonarcloud.io/summary/new_code?id=data-spec-labs_odcs-java-sdk)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=data-spec-labs_odcs-java-sdk&metric=bugs)](https://sonarcloud.io/summary/new_code?id=data-spec-labs_odcs-java-sdk)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=data-spec-labs_odcs-java-sdk&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=data-spec-labs_odcs-java-sdk)
 
 Java SDK for the [Open Data Contract Standard (ODCS)](https://bitol-io.github.io/open-data-contract-standard/) — an open specification for machine-readable agreements between data producers and consumers.
 
