@@ -34,7 +34,7 @@ jobs:
               <server>
                 <id>central</id>
                 <username>${SONATYPE_USER_TOKEN}</username>
-                <password>${SONATYPE_USER_TOKEN}</password>
+                <password>${SONATYPE_TOKEN_PASSWORD}</password>
               </server>
             </servers>
           </settings>
