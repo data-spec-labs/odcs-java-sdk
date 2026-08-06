@@ -11,9 +11,9 @@
     </parent>
 
     <artifactId>odcs-core</artifactId>
-    <name>odcs-core</name>
+    <name>ODCS Java SDK - Core</name>
     <packaging>jar</packaging>
-    <description>Core domain models for Open Data Contract Standard (ODCS)</description>
+    <description>Lightweight Java SDK for the Open Data Contract Standard (Bitol ODCS). Includes POJOs, YAML/JSON parser, spec validator, and fluent builder API.</description>
 
     <dependencies>
         <dependency>

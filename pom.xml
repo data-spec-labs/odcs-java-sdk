@@ -7,8 +7,8 @@
     <artifactId>odcs-java-sdk</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>odcs-java-sdk</name>
-    <description>Enterprise-grade Java SDK for the Open Data Contract Standard (ODCS)</description>
+    <name>Open Data Contract Standard (ODCS) :: Java SDK</name>
+    <description>Enterprise-grade Java SDK for the Bitol Open Data Contract Standard (ODCS v3). Parent project providing unified models, YAML/JSON parsers, spec validators, and runtime execution integrations for JVM pipelines.</description>
     <url>https://github.com/data-spec-labs/odcs-java-sdk</url>
 
     <licenses>
@@ -36,6 +36,11 @@
             </roles>
         </developer>
     </developers>
+
+    <organization>
+        <name>DataSpec Labs</name>
+        <url>https://github.com/data-spec-labs</url>
+    </organization>
 
     <scm>
         <connection>scm:git:git://github.com/data-spec-labs/odcs-java-sdk.git</connection>
