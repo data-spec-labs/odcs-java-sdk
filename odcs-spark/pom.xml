@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.github.data-spec-labs</groupId>
+        <artifactId>odcs-java-sdk</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>odcs-spark</artifactId>
+    <name>ODCS Java SDK - Spark Integration</name>
+    <packaging>jar</packaging>
+    <description>Apache Spark integration for the Open Data Contract Standard (ODCS v3). Bi-directional schema conversion between ODCS contracts and Spark StructType, with planned DataFrame enforcement.</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.data-spec-labs</groupId>
+            <artifactId>odcs-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_${scala.binary.version}</artifactId>
+            <version>${spark.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

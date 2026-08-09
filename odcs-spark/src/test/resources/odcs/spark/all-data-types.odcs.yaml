@@ -1,0 +1,84 @@
+apiVersion: v3.1.0
+kind: DataContract
+id: 53581432-6c55-4ba2-a65f-72344a91553a
+version: 1.0.0
+status: active
+name: spark_all_data_types
+schema:
+  - name: transactions
+    physicalType: table
+    logicalType: object
+    properties:
+      - name: account_id
+        logicalType: string
+        physicalType: string
+        required: true
+        logicalTypeOptions:
+          minLength: 11
+          maxLength: 11
+          pattern: ACC[0-9]{8}
+      - name: txn_ref_date
+        logicalType: date
+        physicalType: date
+      - name: txn_timestamp
+        logicalType: timestamp
+        physicalType: timestamp
+      - name: txn_timestamp_ntz
+        logicalType: timestamp
+        physicalType: timestamp_ntz
+        logicalTypeOptions:
+          timezone: "false"
+      - name: txn_time
+        logicalType: time
+        physicalType: time
+      - name: amount
+        logicalType: number
+        physicalType: decimal(18,2)
+        required: true
+      - name: rate
+        logicalType: number
+        physicalType: double
+        logicalTypeOptions:
+          format: f64
+      - name: age
+        logicalType: integer
+        physicalType: bigint
+        logicalTypeOptions:
+          format: i64
+      - name: is_open
+        logicalType: boolean
+        physicalType: boolean
+      - name: payload
+        logicalType: string
+        physicalType: binary
+        logicalTypeOptions:
+          format: binary
+      - name: street_lines
+        logicalType: array
+        physicalType: array
+        items:
+          logicalType: string
+          physicalType: string
+          required: true
+      - name: customer_details
+        logicalType: object
+        physicalType: struct
+        properties:
+          - name: num_children
+            logicalType: integer
+            physicalType: int
+            required: true
+          - name: date_of_birth
+            logicalType: date
+            physicalType: date
+      - name: attributes
+        logicalType: object
+        physicalType: map
+        customProperties:
+          - property: mapKeyType
+            value: string
+          - property: mapValueType
+            value: bigint
+      - name: tags_map
+        logicalType: object
+        physicalType: map<string,string>

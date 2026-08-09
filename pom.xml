@@ -50,6 +50,7 @@
 
     <modules>
         <module>odcs-core</module>
+        <module>odcs-spark</module>
     </modules>
 
     <properties>
@@ -58,6 +59,8 @@
         <jackson.version>2.22.1</jackson.version>
         <junit.version>6.1.2</junit.version>
         <json-schema-validator.version>2.0.4</json-schema-validator.version>
+        <spark.version>3.5.8</spark.version>
+        <scala.binary.version>2.13</scala.binary.version>
         <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
         <sonar.organization>data-spec-labs</sonar.organization>
