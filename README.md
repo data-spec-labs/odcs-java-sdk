@@ -172,3 +172,5 @@ DataContract updated = DataContractBuilder.from(contract)
     .status("deprecated")
     .build();
 ```
+
+<img src="https://static.scarf.sh/a.png?x-pxid=e6c2f369-5ee0-49d2-bfde-c8ea9ebc98f0" alt="Scarf Pixel" />
