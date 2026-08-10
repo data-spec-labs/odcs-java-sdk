@@ -1,5 +1,7 @@
 # Open Data Contract Standard (ODCS) Java SDK
 
+[![Downloads](https://api.scarf.sh/v2/packages/Data-spec-labs/5b899aa4-b8d9-4601-923b-467f9b44bb99/downloads-badge)](https://scarf.sh)
+
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.data-spec-labs/odcs-java-sdk.svg?label=Maven%20Central&color=brightgreen)](https://central.sonatype.com/artifact/io.github.data-spec-labs/odcs-java-sdk)
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Java Version](https://img.shields.io/badge/Java-17%2B-brightgreen.svg?logo=openjdk&logoColor=white)](https://jdk.java.net/)
