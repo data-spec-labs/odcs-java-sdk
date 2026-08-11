@@ -4,6 +4,9 @@ on:
   release:
     types: [published] # Triggered ONLY when you publish a GitHub Release
 
+permissions:
+  contents: read
+
 jobs:
   publish:
     runs-on: ubuntu-latest
